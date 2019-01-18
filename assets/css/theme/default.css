@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&subset=latin-ext");
+body {
+  color: #333;
+  font-size: 3vh;
+  font-family: "Sarabun", sans-serif; }
+
+section.slide * {
+  justify-self: center;
+  max-width: 90vw; }
+
+section.slide h1, section.slide h2, section.slide h3 {
+  text-align: center;
+  justify-self: auto;
+  margin: 0;
+  padding: 0;
+  max-width: none; }
+
+section.slide h1 {
+  font-size: 5rem;
+  font-weight: 100;
+  position: relative;
+  padding-bottom: 10px; }
+  section.slide h1:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 3px;
+    background-color: #199eff; }
+
+section.slide h2 {
+  font-size: 3rem;
+  margin-top: 10px; }
+
+section.slide h3 {
+  font-size: 2rem; }
+
+footer {
+  background: #199eff;
+  color: #fff;
+  height: 60px; }
+  footer span {
+    font-size: 1.5rem;
+    padding: 0 30px; }
+
+.hidden {
+  display: none; }
+
+/* special cases */
+section.slide.splash {
+  background-color: #199eff; }
+  section.slide.splash h1, section.slide.splash h2, section.slide.splash h3 {
+    color: #fff; }
+
+section.slide.background h1, section.slide.background h2, section.slide.background h3 {
+  color: #fff; }
+
+section.slide.splash.background {
+  grid-template-rows: [empty] 10vh [headline] 20vh [subheadline] 20vh [end] auto; }
+  section.slide.splash.background h1, section.slide.splash.background h2, section.slide.splash.background h3 {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 20px 0; }
+    section.slide.splash.background h1:after, section.slide.splash.background h2:after, section.slide.splash.background h3:after {
+      display: none; }
+
+/*# sourceMappingURL=default.css.map */
